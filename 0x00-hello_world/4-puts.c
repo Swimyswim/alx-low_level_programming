@@ -2,10 +2,10 @@
 
 /**
  * main - prints the sentence
- * return: 0 if code successful, else return non zero value
+ * Return: 0 if code successful, else return non zero value
  */
 
-int main()
+int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
