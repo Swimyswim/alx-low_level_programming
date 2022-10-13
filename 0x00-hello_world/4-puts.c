@@ -2,7 +2,7 @@
 
 /**
  * main - prints the sentence
- * return: 0 if code successful 
+ * return: 0 if code successful, else return non zero value 
  */
 
 int main(void)
