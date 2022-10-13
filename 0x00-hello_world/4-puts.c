@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- * Code that prints a specific text
- * with 0 as the return value
+ * main - prints the sentence
+ * return: 0 if code successful 
  */
 
 int main(void)
