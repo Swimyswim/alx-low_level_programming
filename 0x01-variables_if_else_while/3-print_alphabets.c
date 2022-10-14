@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - prints lowercase alphabe,
+ * main - prints lowercase alphabet,
  * followed by uppercase alhpabets
  * Return: Always 0 (Success)
  */
 
 int main(void)
 
-	char al;
+	int al;
 
 	for (al = 'a'; al <= 'z'; al++)
 		putchar(al);
