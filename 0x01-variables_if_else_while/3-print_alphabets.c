@@ -7,8 +7,9 @@
  */
 
 int main(void)
-{
-	char al;
+
+	int al;
+
 	for (al = 'a'; al <= 'z'; al++)
 
 	{
