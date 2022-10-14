@@ -8,6 +8,7 @@
 int main(void)
 {
 	int a;
+
 	for (a =48; a < 58; a++)
 	{
 
@@ -21,4 +22,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
