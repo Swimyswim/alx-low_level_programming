@@ -5,6 +5,7 @@
  * main - prints list of numbers form 1 to 100
  * multiples of 3 print fizz and multiples of 5 print buzz
  * multiples of both 5 and 3 print fizzbuzz
+ * Return: results
  */
 
 int main(void)
@@ -35,6 +36,5 @@ int main(void)
 		}
 	}
 	printf("\n");
-	
 	return (0);
 }
