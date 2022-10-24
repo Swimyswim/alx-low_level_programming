@@ -5,7 +5,7 @@
  * @str: printed string
  */
 
-void puts2(char *sre)
+void puts2(char *str)
 {
 	int len, i;
 
