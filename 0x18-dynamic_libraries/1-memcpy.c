@@ -1,21 +1,25 @@
+#include "main.h"
+
 /**
- * *_memcpy - program startup
- * @dest: first pointer being evaluated
- * @src: second pointer being evaluated
- * @n: int being evaluated
-(*
- * Description: copies memory area)?
- * Return: return (0) is the required function signature
+ * _memcpy - a function that copies the memory area
+ * @dest: storage location
+ * @src: copies memory
+ * @n: number of bytes
+ *
+ * Return: copies memory
  */
 
-#include "main.h"
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	unsigned int byte;
+	int i = 0;
+	int j = 0;
 
-	for (byte = 0; byte < n; byte++)
+	while (n > 0)
 	{
-		dest[byte] = src[byte];
+		dest[i] = src[j];
+		i++;
+		j++;
+		n--;
 	}
 	return (dest);
 }

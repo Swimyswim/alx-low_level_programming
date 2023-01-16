@@ -1,21 +1,16 @@
+#include "main.h"
+
 /**
- * _abs - program startup
- * @n: int being evaluated
-(*
- * Description: computes the absolute value of an integer?
- * Return: return (0) is the required function signature
+ * _abs - computes the absolute value of an integer
+ * @n: the integer to check
+ * Return: the absolute value of the integer
  */
 
-#include "main.h"
 int _abs(int n)
 {
 	if (n >= 0)
 	{
 		return (n);
 	}
-	else if (n < 0)
-	{
-		return (-n);
-	}
-	return (0);
+	return (-n);
 }

@@ -1,26 +1,31 @@
+#include "main.h"
+
 /**
- * *_strcat - program startup
- * @dest: first pointer being evaluated
- * @src: second pointer being evaluated
-(*
- * Description: concatenates two strings)?
- * Return: return (0) is the required function signature
+ * _strcat - concatenates 2 strings
+ * @src: String to add
+ * @dest: string to append to
+ *
+ * Return: pointer to the resulting dest string
  */
 
-#include "main.h"
 char *_strcat(char *dest, char *src)
 {
-	int length;
-	int string;
+	int a, b;
 
-	for (length = 0; dest[length] != '\0'; length++)
+	a = 0;
+	b = 0;
+
+	while (dest[a] != '\0')
+		a++;
+
+	while (src[b] != '\0')
 	{
-		continue;
+		dest[a] = src[b];
+		b++;
+		a++;
 	}
-	for (string = 0; src[string] != '\0'; string++)
-	{
-		dest[length++] = src[string];
-	}
-	dest[length] = '\0';
+
+	dest[a] = '\0';
+
 	return (dest);
 }

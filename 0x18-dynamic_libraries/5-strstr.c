@@ -1,32 +1,36 @@
+#include "main.h"
+
 /**
- * *_strstr - program startup
- * @haystack: first pointer being evaluated
- * @needle: second pointer being evaluated
-(*
- * Description: locates a substring)?
- * Return: return (0) is the required function signature
+ * _strstr - a function that locates a substring
+ * @haystack: locate a substring
+ * @needle: substring to locate
+ *
+ * Return: pointer to the beginning of the located substring,
+ * or NULL, if substring is not found
  */
 
-#include "main.h"
 char *_strstr(char *haystack, char *needle)
 {
-	int byte;
-	int string;
+	char *h = haystack;
+	char *n = needle;
 
-	for (byte = 0; haystack[byte] != '\0'; byte++)
+	while (*h)
 	{
-		for (string = 0; needle[string] != '\0'; string++)
+		n = needle;
+		h = haystack;
+		while (*n)
 		{
-			if (haystack[byte + string] != needle[string])
+			if (*h == *n)
 			{
-				break;
+				n++;
+				h++;
 			}
+			else
+				break;
 		}
-		if (!needle[string])
-		{
-			return (&haystack[byte]);
-		}
-
+		if (*n == '\0')
+			return (haystack);
+		haystack++;
 	}
-	return (NULL);
+	return (0);
 }

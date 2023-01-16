@@ -1,28 +1,26 @@
+#include "main.h"
+#include <stddef.h>
+
 /**
- * *_strpbrk - program startup
- * @s: first pointer being evaluated
- * @accept: second pointer being evaluated
-(*
- * Description: searches a string for any of a set of bytes)?
- * Return: return (0) is the required function signature
+ * _strpbrk - searching a string for any of a set of bytes
+ * @s: the string
+ * @accept: set of bytes
+ *
+ * Return: a pointer to the byte in s that matches one of the bytes in accept
  */
 
-#include "main.h"
 char *_strpbrk(char *s, char *accept)
 {
-	int byte;
-	int string;
+	unsigned int i;
+	unsigned int j;
 
-	for (byte = 0; *s != '\0'; byte++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (string = 0; accept[string] != '\0'; string++)
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[string])
-			{
-				return (s);
-			}
+			if (s[i] == accept[j])
+				return (&s[i]);
 		}
-		s++;
 	}
 	return (NULL);
 }

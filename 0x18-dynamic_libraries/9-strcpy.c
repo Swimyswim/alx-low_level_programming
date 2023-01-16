@@ -1,22 +1,28 @@
+#include "main.h"
+
 /**
- * *_strcpy - program startup
- * @dest: first pointer being evaluated
- * @src: second pointer being evaluated
-(*
- * Description: prints a string followed by a new line
- * to the standard output)?
- * Return: dest
+ * *_strcpy - copies the string pointed at src
+ * @dest: the buffer
+ * @src: string to be copied
+ *
+ * Return: the pointer to dest
  */
 
-#include "main.h"
 char *_strcpy(char *dest, char *src)
 {
-	int string;
+	int len, i;
 
-	for (string = 0; src[string] != '\0'; string++)
+	len = 0;
+
+	while (src[len] != '\0')
 	{
-		dest[string] = src[string];
+		len++;
 	}
-	dest[string++] = '\0';
+
+	for (i = 0; i < len; i++)
+	{
+		dest[i] = src[i];
+	}
+	dest[i] = '\0';
 	return (dest);
 }

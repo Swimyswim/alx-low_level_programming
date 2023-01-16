@@ -1,18 +1,17 @@
+#include "main.h"
+
 /**
- * _puts - program startup
- * @str: pointer being evaluated
-(*
- * Description: prints a string followed by a new line
- * to the standard output)?
- * Return: return (0) is the required function signature
+ * _puts - prints a string followed by a new line
+ * @str: character to be worked on
  */
 
-#include "main.h"
 void _puts(char *str)
 {
-	while (*str)
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		_putchar(*str++);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
